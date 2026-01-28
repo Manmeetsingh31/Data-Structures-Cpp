@@ -12,17 +12,18 @@ int main() {
 
     while(a>0 && b>0){
 
+//EUCLIDEAN SAYS: //GCD(a,b) if a>b -> GCD(a-b,b) -> do (a-b) untill IT becomes 0: GCD(0,b) here b is the GCD
         if(a>b){                            
             a= a%b;
         }
-        else{                    //GCD(a,b)and a>b -> GCD(a-b,b) -> GCD(0,b) here b is the GCD
+        else{           //b>a            
             b=b%a;
         }
 
         if(a==0){
             GCD=b;
         }
-        else{
+        else{  //b==0
             GCD=a;
         }
     }
