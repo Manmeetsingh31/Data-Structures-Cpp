@@ -15,7 +15,10 @@ int allDiv(int n){
 }
 
 int main() {
-    int n=20;
+    int n;
+    cout<<"enter the number: ";
+    cin>>n;
+    
     allDiv(n);
     return 0;
 }

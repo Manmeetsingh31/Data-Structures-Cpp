@@ -8,6 +8,7 @@ int power(int x, int n) {
         if (n % 2 == 1) {     // if n is odd
             result = result * x;
         }
+        
         x = x * x;            // square the base
         n = n / 2;            // divide exponent by 2
     }
