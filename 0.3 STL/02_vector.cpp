@@ -9,7 +9,7 @@ void expVector(){ // vector is dynamic in nature
     vec.emplace_back(3,1); //automaticallly takes it as pair n input
 
     vector<int> v1(5,100);   // {100,100,100,100,100}
-    vector<int> v2(5);        // {0,0,0,0}
+    vector<int> v2(5);        // {0,0,0,0,0}
 
     //copying vector
     vector<int> v9(v1); // // copy of v1(deep copy)
