@@ -3,10 +3,10 @@
 using namespace std;
 
 int isSet(int n,int k){
-    int x=1;
+    int x=1;  
 
     for(int i=0;i<(k-1);i++){
-        x=x*2;
+        x= x*2 ;  //multiplying x (ie 2 here), k-1 times 
     }
     if((n & x )!= 0){
         cout<<"yes";
@@ -32,5 +32,5 @@ int main() {
 }
 
 //k<= number of bits in binary of n
-//no. with 1 as its kth bit is: 2^(k-1) ie. assume its x
-// so if n & x is 1: kth bit
+//The number having 1 as its kth bit is: 2^(k-1) ie. assume its x
+// so if (n & x) is 1: kth bit
