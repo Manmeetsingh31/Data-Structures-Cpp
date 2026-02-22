@@ -7,13 +7,13 @@ void initialize(){
     tbl[0]=0;
 
     for(int i=1;i<256;i++){
-        tbl[i]= tbl[i & (i-1)]+1; 
+        tbl[i]= tbl[i & (i-1)] + 1; 
     }
 }
 
 int countSet(int n){
 
-    return tbl[n & 255]+
+    return tbl[n & 255]+    // 00000110 & [eights 1's]= 1,1
     tbl[(n>>8) & 255]+
     tbl[(n>>16) & 255]+
     tbl[(n>>24) & 255];
@@ -35,7 +35,8 @@ int main() {
 /*
 
 So. we have Brian Kerningam's ALGO
-n=(n-1)
+n = (n-1)
+
 removes all trailing zeroes to 1 and
 last 1 to 0
 

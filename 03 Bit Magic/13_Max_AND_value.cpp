@@ -48,21 +48,20 @@ int checkbit(int pattern, int arr[], int n){
 // Function to find maximum AND value of any pair
 int maxAND(int arr[],int n){
 
-    int res=0,count;
-
+    int res=0;
+    int count;
 
      /*
     We try each bit from MSB (31) to LSB (0).
-    For each bit:
-    - try adding this bit to result
-    - check if at least two numbers support it
+    For each bit:   - try adding this bit to result
+                    - check if at least two numbers support it
     */
     for(int bit=31;bit>=0;bit--){
 
         int pattern = res | (1 << bit);
 
 
-         // count numbers matching this pattern
+        // count numbers matching this pattern
         count= checkbit( pattern, arr,n);
 
 

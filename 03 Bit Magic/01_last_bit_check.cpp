@@ -3,7 +3,7 @@ using namespace std;
 
 int isSet(int n){
 
-    if((n % 2 )!= 0){    //or we can take and (&) with 1.
+    if((n % 2 )!= 0){    // or we can take and (&) with 1.
         cout<<"yes";
     }
     else{

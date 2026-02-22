@@ -35,7 +35,7 @@ n/2=1: 1
 traverse mumber from last bit and then implement res by set bits
 
 
-this algo is gonna run for 32 times
+this Algo is gonna run for 32 times
 
 So. we have Brian Kerningam's ALGO
 */

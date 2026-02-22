@@ -6,9 +6,10 @@ int isSet(int n,int k){
     int x=1;  
 
     for(int i=0;i<(k-1);i++){
-        x= x*2 ;  //multiplying x (ie 2 here), k-1 times 
+        x= x*2 ;  // multiplying x (ie 2 here), k-1 times 
     }
-    if((n & x )!= 0){
+
+    if((n & x )!= 0){   // if n & x is 1 its SET bit
         cout<<"yes";
     }
     else{
@@ -32,5 +33,7 @@ int main() {
 }
 
 //k<= number of bits in binary of n
-//The number having 1 as its kth bit is: 2^(k-1) ie. assume its x
+
+//The number having 1 as its kth bit is: 
+                                    //   2^(k-1) ie. assume its x
 // so if (n & x) is 1: kth bit

@@ -3,15 +3,14 @@ using namespace std;
 
 int isSet(int n,int k){
 
-    int x=( 1<< (k-1));  //k-1 times 
+    int x=( n>> k);  
 
-    if((n & x )!= 0){
+    if((x & 1 )!= 0){
         cout<<"yes";
     }
     else{
         cout<<"no";
     }
-
 }
 
 int main() {
